@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    /*font: 14px "Microsoft YaHei";*/
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+h2 {
+    margin-bottom: 30px;
+}
+
+.wrap {
+    width: 990px;
+    height: 900px;
+    margin: 0 auto;
+}
+
+.wrap .content {
+    margin: 0 auto;
+    padding-top: 80px;
+}
+
+#book-count {
+    font-size: 32px;
+    color: red;
+    font-family: "楷体";
+}
+
+.wrap .content .book-result {
+    width: 186px;
+    height: 294px;
+    border: 1px solid #333333;
+    float: left;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #333333;
+}
+
+.wrap .content .book-result a img {
+    display: block;
+    width: 184px;
+    height: 184px;
+    margin: 0 auto;
+    border-bottom: 1px dashed #666666;
+}
+
+.wrap .content .book-result p {
+    width: 100%;
+    height: 25px;
+    margin-top: 2px;
+    line-height: 25px;
+}
+
+.wrap .content .book-result .book-name {
+    text-align: center;
+}
+.wrap .content .book-result .book-name a:hover{
+    text-decoration: underline;
+}
+.wrap .content .book-result .book-price {
+    text-align: center;
+    color: red;
+}
+
+.wrap .content .book-result .book-buy {
+    width: 100px;
+    margin: 0 auto;
+    border: 1px solid #999999;
+}
+.wrap .content .book-result .book-buy:hover{
+    border: 0;            background: #fcbc03;
+
+}
+.wrap .content .book-result .book-buy:hover a{
+    color: #ffffff;
+}
+.wrap .content .book-result .book-buy a {
+    display: block;
+    width: 32px;
+
+    margin: 0 auto;
+}

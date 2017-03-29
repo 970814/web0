@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>图书商城--用户登录</title>
+    <link href="css/login.css" rel="stylesheet" type="text/css"/>
+    <link href="images/logo.ico" rel="shortcut icon" type="image/x-icon"/>
+</head>
+
+<body>
+<div class="box" id="box">
+    <div class="wrap" id="wrap">
+        <form action="Login" method="get">
+            <p id="user">
+                <span></span>
+                <input type="text" id="username" name="username" placeholder="请输入用户名/邮箱"/>
+            </p>
+            <p id="pass">
+                <span></span>
+                <input type="password" id="password" name="password" placeholder="请输入密码"/>
+            </p>
+            <p style="height:18px;">
+            <span style="float:left;color:#fff;" id="remember">
+                <input type="checkbox" name="remember-password" id="remember-password"/>记住密码
+            </span>
+                <span style="float:right;">
+                <a href="retrieve.html" style="text-decoration: none;color:#fff;">忘记密码？</a>
+            </span>
+            </p>
+            <p id="submit">
+                <input type="submit" value="登录" id="sub-btn">
+            </p>
+            <p class="register">
+                <a href="register.html" style="color:#fff;float:right;font-size:14px;">用户注册</a>
+            </p>
+        </form>
+    </div>
+</div>
+<canvas id="canvas"></canvas>
+<script src="js/login.js" type="text/javascript"></script>
+</body>
+</html>

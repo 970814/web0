@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background: #060e1b;
+    overflow: hidden;
+    transform-style: preserve-3d;
+    perspective: 0px;
+}
+
+canvas {
+    /*opacity: 0.5;*/
+}
+
+/* Demo Buttons Style */
+.codrops-demos {
+    font-size: 0.8em;
+    text-align: center;
+    position: absolute;
+    z-index: 99;
+    width: 96%;
+}
+
+.codrops-demos a {
+    display: inline-block;
+    margin: 0.35em 0.1em;
+    padding: 0.5em 1.2em;
+    outline: none;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    border-radius: 2px;
+    font-size: 110%;
+    border: 2px solid transparent;
+    color: #fff;
+}
+
+.codrops-demos a:hover,
+.codrops-demos a.current-demo {
+    border-color: #383a3c;
+}
+
+.box {
+    width: 430px;
+    height: 365px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin:auto;
+
+}
+
+.wrap {
+    width: 300px;
+    height: 265px;
+    background: rgba(255, 255, 255,0.3);
+    border-radius: 20px;
+    padding: 20px;
+    /*margin: 30px auto;*/
+    animation: scal 5s linear infinite alternate;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin:auto;
+}
+
+input {
+    outline: none;
+    border: 0;
+    background: none;
+    color: #ffffff;
+}
+
+.wrap form {
+    width: 300px;
+    height: 265px;
+}
+
+.wrap form p {
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+@keyframes scal {
+    from {
+        transform: scale(0.7);
+    }
+    to {
+        transform: scale(1.1);
+    }
+}
+
+#user, #pass {
+    height: 50px;
+    line-height: 50px;
+    border: 2px solid #ccc;
+}
+
+#user span, #pass span {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    margin: 0 0 0 8px;
+    vertical-align: middle;
+}
+
+#user span {
+    background: url("../images/account-icon.png");
+}
+
+#pass span {
+    background: url("../images/password-icon.png");
+}
+
+#username, #password {
+    width: 258px;
+    height: 30px;
+    font-size: 16px;
+}
+
+#submit {
+    text-align: center;
+}
+
+#sub-btn {
+    width: 300px;
+    height: 40px;
+    background: #ff9a32;
+    color: #ffffff;
+    font: 16px "微软雅黑";
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#sub-btn:active {
+    transform: translate(2px, 2px);
+}

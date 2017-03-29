@@ -1,0 +1,300 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+.content {
+    width: 1100px;
+    height: 502px;
+    margin: 100px auto;
+    position: relative;
+}
+
+#wrap {
+    width: 400px;
+    height: 500px;
+    border: 1px solid #bbb;
+    /*margin: 100px;*/
+
+    float: left;
+}
+
+#wrap .pic {
+    width: 400px;
+    height: 400px;
+    position: relative;
+}
+
+#wrap .pic .pic_cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#wrap .pic .pic_cover img {
+    display: block;
+}
+
+#wrap .pic .pic_cover .cover {
+    width: 200px;
+    height: 200px;
+    background-image: url(../images/cover.png);
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: move;
+    display: none;
+}
+
+#wrap .tab {
+    width: 400px;
+    height: 54px;
+    margin-top: 20px;
+}
+
+#wrap .tab li {
+    width: 50px;
+    height: 50px;
+    float: left;
+    margin: 0 13px;
+    cursor: pointer;
+    border: 2px solid #fff;
+    transition: border .3s;
+    position: relative;
+}
+
+#wrap .tab li img {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#wrap .tab li.on {
+    border: 2px solid #f60;
+}
+
+#wrap .show {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: 0;
+    right: -410px;
+    background: #ffffcc;
+    display: none;
+    background-image: url(../images/art/1/1.jpg);
+    z-index: 2;
+}
+
+#list {
+    width: 400px;
+    height: 300px;
+
+    border: 1px solid #FFFFFF;
+    position: absolute;
+    top: 0;
+    left: 200px;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+}
+
+#list form div {
+    height: 50px;
+    margin-bottom: 30px;
+    border-bottom: 1px dashed #cccccc;
+    line-height: 50px;
+}
+
+#list form .price {
+    font-size: 28px;
+    font-weight: bold;
+    color: #ff0511;
+}
+
+#list form .price span {
+    font-size: 16px;
+    color: #000;
+}
+
+#list form div span {
+    font-weight: bold;
+}
+
+#list form .counter .box {
+    display: inline-block;
+    width: 100px;
+    height: 34px;
+    border: 0;
+}
+
+#counter-number {
+    width: 100px;
+    height: 35px;
+}
+
+#pay-btn {
+    width: 120px;
+    height: 40px;
+    background: #ff0511;
+    font-family: "黑体";
+    font-size: 26px;
+    border: 0;
+    color: #fff;
+    display: block;
+    margin-left: 50px;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #ccc;
+    outline: none;
+}
+
+#slide-bar {
+    width: 50px;
+    height: 300px;
+    position: absolute;
+    right: 0;
+    top: 300px;
+    margin-top: -200px;
+    z-index: 50;
+}
+
+#discuss {
+    display: block;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: #333;
+    background: #e8e8e8;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: .5s;
+    transform: rotate(0deg) scale(1);
+
+}
+
+#discuss:hover {
+    background: #ff0511;
+    color: #fff;
+    font-weight: bold;
+    transition: .5s;
+    transform: rotate(360deg) scale(1.3);
+}
+
+#barrage-switch {
+
+    width: 150px;
+    height: 25px;
+    margin-top: 20px;
+    padding-top: 10px;
+    text-align: left;
+    color: #333;
+    text-indent:5px;
+    background: #e8e8e8;
+     border-radius: 25px;
+    text-decoration: none;
+    transition: .5s;
+    transform: rotate(0deg) scale(1);
+}
+
+#barrage {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    /*background: rgba(255,255,255,0.1);*/
+    display: none;
+    z-index: 40;
+}
+
+
+
+#barrage .discuss-text-content {
+    width: 710px;
+    height: 65px;
+    position: absolute;
+    bottom: -300px;
+    left: 0px;
+    top: 250px;
+    right: 0;
+    margin: auto;
+}
+
+form .barrage-text-input {
+    width: 600px;
+    height: 40px;
+    font-size: 20px;
+    font-family: "Microsoft YaHei";
+    display: block;
+    float: left;
+}
+
+#barrage .barrage-wrap {
+    width: 100%;
+    height: 800px;
+    position: relative;
+}
+
+#barrage .barrage-wrap div {
+    position: absolute;
+    top: 40px;
+    right: 0;
+}
+
+.barrage-see-text {
+    font: 24px "Microsoft YaHei";
+    animation: barr-text 2s linear infinite alternate;
+}
+
+@keyframes barr-text {
+    25% {
+        transform: rotate(0deg) scale(1)
+    }
+    50% {
+        transform: rotate(-20deg) scale(1.4)
+    }
+    75% {
+        transform: rotate(0deg) scale(1)
+    }
+    100% {
+        transform: rotate(20deg) scale(1.4)
+    }
+}
+
+#barrage-send-btn {
+    width: 96px;
+    height: 40px;
+    display: block;
+    float: right;
+    border: 0;
+    border-radius: 30px;
+    outline: none;
+    cursor: pointer;
+    background: #ff7300;
+    color: #fff;
+    font: bold 18px "微软雅黑";
+}
+
+#barrage-send-btn:active {
+    transform: translate(2px, 3px);
+}
+
+#send-barrage {
+    width: 700px;
+    height: 40px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    margin-bottom: 50px;
+    z-index: 49;
+    display: none;
+}

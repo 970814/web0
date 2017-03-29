@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    padding: 0;
+    font: 14px "Microsoft YaHei";
+}
+
+a {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+button, input, select, textarea {
+    font-size: 100%;
+}
+
+h2 {
+    display: inline-block;
+    font-size: 22px;
+}
+
+.wrap {
+    width: 990px;
+    height: 400px;
+    margin: 50px auto;
+    color: #3c3c3c;
+}
+
+.wrap .steps {
+    height: 46px;
+    border-bottom: 2px solid #e6e6e6;
+    position: relative;
+}
+
+.wrap .steps ol {
+    width: 720px;
+    margin: 0 auto;
+}
+
+.wrap .steps ol li {
+    display: inline;
+    float: left;
+    width: 170px;
+    padding-left: 70px;
+    height: 46px;
+    line-height: 46px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #999;
+}
+
+.steps ol li.active {
+    border-bottom: 2px solid #ff7300;
+}
+
+.steps ol li.active i {
+    background-image: url("../images/ico-circle1.png");
+}
+
+.steps ol li i {
+    display: inline-block;
+    zoom: 1;
+    margin-right: 5px;
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    font-style: normal;
+    line-height: 24px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #FFF;
+    background: url("../images/ico-circle2.png") no-repeat 0 0;
+}
+
+.wrap .steps ol li .active {
+    background: url("../images/ico-circle1.png")
+}
+
+.wrap .content {
+    height: 280px;
+    padding: 50px 0;
+    border-bottom: 2px solid #e6e6e6;
+}
+
+.wrap .content .form-list {
+    width: 720px;
+    height: 274px;
+    margin: 0 auto;
+    font-size: 14px;
+}
+
+.wrap .content .form-list .form-group {
+    padding: 10px 0
+}
+
+.wrap .content .form-list .form-group .form-item {
+    padding: 10px 0 10px 260px;
+    line-height: 36px;
+    zoom: 1;
+}
+
+.form-item .form-label {
+    display: inline;
+    float: left;
+    margin-left: -260px;
+    width: 240px;
+    height: 37px;
+    line-height: 37px;
+    text-align: right;
+}
+
+.form-text {
+    border: 1px solid #dedede;
+    width: 202px;
+    padding: 9px;
+    font-size: 14px;
+    _margin-left: -3px;
+    color: #333;
+}
+
+.form-item:after {
+    content: "";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    height: 0;
+}
+
+.form-checkbox {
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.agreement-content {
+    float: left;
+    font-size: 12px;
+    width: 440px;
+}
+
+.form-item-short {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.btn {
+    display: inline-block;
+    zoom: 1;
+    height: 36px;
+    line-height: 36px;
+    padding: 0 20px;
+    color: #FFF;
+    font-weight: 700;
+    font-size: 16px;
+    text-align: center;
+    background: #ff4001;
+    border: 0;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.btn-large {
+    min-width: 180px;
+}
+
+.msg {
+
+    padding-left: 22px;
+    font-size: 12px;
+    line-height: 1.4;
+    color: #ff0511;
+}
+
+#l2 .form-group {
+    padding: 5px 0
+}
+
+#l2 .form-group .form-item {
+    padding: 5px 0 5px 260px;
+    line-height: 36px;
+    zoom: 1;
+}
+
+#submit {
+    display: block;
+    margin: 50px auto;
+}
+
+#login-name {
+    width: 222px;
+    height: 37px;
+    line-height: 37px;
+}

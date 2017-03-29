@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>图书商城--个人信息</title>
+    <meta name="author" content="饭饭">
+    <meta name="keywords" content="关键字，关键词">
+    <meta name="description" content="描述信息">
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        ul li {
+            list-style: none;
+        }
+
+        .wrap {
+            width: 100%;
+            height: 250px;
+            background: url("images/personalbg.webp.jpg");
+            background-size: cover;
+
+        }
+
+        .wrap .header {
+            width: 800px;
+            height: 250px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .wrap .header .title {
+            color: #FFFFFF;
+            width: 300px;
+            position: absolute;
+            bottom: 40px;
+        }
+
+        .content {
+            width: 800px;
+            margin: 0 auto;
+        }
+
+        .content .book-box {
+            width: 100%;
+            background: #ffcf64;
+        }
+
+        .content .book-mess {
+            width: 186px;
+            height: 270px;
+            float: left;
+            margin: 3px 7px;
+        }
+
+        .content .book-mess a img {
+            width: 184px;
+            height: 184px;
+            border-bottom: 1px solid #e6e6e6;
+            transition: 1s;
+            transform: scale(0.9);
+        }
+        .content .book-mess a img:hover{
+            transform: scale(1);
+            transition: 1s;
+        }
+        .content .book-mess .img-text p {
+            height: 35px;
+            text-align: center;
+        }
+
+        .content .book-mess .img-text p.book-name {
+            font-size: 14px;
+            line-height: 35px;
+        }
+
+        .content .book-mess .img-text p.book-price {
+            color: red;
+            font-weight: bold;
+            line-height: 35px;
+        }
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <div class="header">
+        <div class="title">
+            <h2>某某某的个人主页</h2>
+            <p>登录邮箱：<span>123@123.com</span></p>
+            <p>手机号：<span>748748748</span></p>
+            <p>书币余额：<span>1000</span></p>
+        </div>
+    </div>
+</div>
+<div class="content">
+    <h2 class="result">
+        您当前拥有<span style="font-size: 32px;color: red; font-family:'楷体';"> 6 </span>本书，其价值相当于 <span
+            style="font-size: 32px;color: red; font-family:'楷体';"> 1234 </span> 书币 ≈<span
+            style="font-size: 32px;color: red; font-family:'楷体';"> 1234 </span>RMB
+    </h2>
+    <div class="book-box">
+        <div class="book-mess">
+            <a href="#" class="book-img">
+                <img src="" alt="图片">
+            </a>
+            <div class="img-text">
+                <p class="book-name">书名</p>
+                <p class="book-price">数量</p>
+            </div>
+        </div>
+        <div class="book-box">
+            <div class="book-mess">
+                <a href="#" class="book-img">
+                    <img src="" alt="图片">
+                </a>
+                <div class="img-text">
+                    <p class="book-name">书名</p>
+                    <p class="book-price">数量</p>
+                </div>
+            </div><div class="book-box">
+            <div class="book-mess">
+                <a href="#" class="book-img">
+                    <img src="" alt="图片">
+                </a>
+                <div class="img-text">
+                    <p class="book-name">书名</p>
+                    <p class="book-price">数量</p>
+                </div>
+            </div><div class="book-box">
+            <div class="book-mess">
+                <a href="#" class="book-img">
+                    <img src="" alt="图片">
+                </a>
+                <div class="img-text">
+                    <p class="book-name">书名</p>
+                    <p class="book-price">数量</p>
+                </div>
+            </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+
+</script>
+</body>
+</html>

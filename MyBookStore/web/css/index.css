@@ -1,0 +1,359 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none
+}
+
+ul li {
+    list-style: none;
+}
+
+input {
+    outline: none
+}
+
+body {
+    background-size: 100%;
+}
+/*
+    头部
+*/
+.header {
+    width: 100%;
+    height: 30px;
+    background-image: linear-gradient(to bottom, #fff1bb, #bcfdff);
+    box-shadow: 0 3px 5px #ccc;
+    position: fixed;
+    top:0;
+    z-index: 10;
+}
+
+#login {
+    color: #333;
+    font: 12px/30px "宋体";
+    margin-left: 150px;
+}
+
+/*
+    内容区
+*/
+.wrap {
+    width: 1102px;
+    margin: 0 auto;
+}
+
+/*
+    左侧边栏
+*/
+.slide-bar {
+    width: 40px;
+    height: 430px;
+    position: fixed;
+    top: 120px;
+    left: 30px;
+    font: 14px "微软雅黑";
+    display: none;
+}
+
+.slide-bar ul li {
+    height:32px;
+    width: 70px;
+    margin-top: 2px;
+    line-height: 32px;
+    text-align: center;
+    cursor: pointer;
+    transition: none;
+}
+.slide-bar ul li:hover{
+    color: #c02031;
+    font-weight: bold;
+    background: rgba(153, 200, 255, 0.4);
+}
+
+.slide-bar ul li.curse {
+    color: red;
+    font-weight: bold;
+    background: rgba(153, 200, 255, 0.9);
+}
+
+#returnTop a {
+    color: #333;
+}
+
+/*
+    每一个类别展示区
+*/
+.wrap .floor {
+    width: 990px;
+    height: 608px;
+    border: 1px solid #cccccc;
+    margin: 40px auto 0;
+    box-shadow: 3px 3px 5px #ccc, -3px -3px 5px #ccc;
+    border-radius: 5px;
+}
+
+.wrap .floor .img-box{
+    float: left;
+    width: 186px;
+    height: 294px;
+    background: #FFFFFF;
+    border: 1px solid #562a77;
+    margin-left: 9px;
+    margin-top: 5px;
+}
+.wrap .floor .img-box a img{
+    width:184px;
+    height: 184px;
+    border-bottom: 1px solid #e6e6e6;
+    transition: 1s;
+    transform: scale(0.9);
+}
+.wrap .floor .img-box a img:hover{
+    transform: scale(1);
+    transition: 1s;
+}
+.wrap .floor .img-box .img-text p{
+    height:35px;
+    text-align: center;
+}
+
+.wrap .floor .img-box .img-text .book-name {
+    font-size: 14px;
+    line-height: 35px;
+}
+.wrap .floor .img-box .img-text .book-name:hover{
+    text-decoration: underline;
+}
+.wrap .floor .img-box .img-text .price{
+    color:red;
+    font-weight: bold;
+    line-height: 35px;
+}
+.wrap .floor .img-box .img-text .book-buy{
+    line-height: 30px;
+    display: block;
+    width: 100px;
+    margin: 0 auto;
+    border: 1px solid #333;
+}
+.wrap .floor .img-box .img-text .book-buy:hover{
+    background: #fdbb00;
+    color:#FFFFFF;
+    border: 0;
+}
+/*banner框*/
+.wrap .banner {
+    height: 380px;
+    margin: 60px auto 0;
+    box-shadow: none;
+    border: 0;
+
+}
+
+.footer {
+    width: 100%;
+    height: 70px;
+    background: rgba(255, 246, 245, 0.6);
+    position: fixed;
+    bottom: 0px;
+}
+
+.footer .footer-content {
+    width: 275px;
+    margin: 0 auto;
+    line-height: 70px;
+}
+
+/*banner*/
+.box {
+    width: 900px;
+    height: 360px;
+    margin: 50px auto;
+    position: relative;
+}
+
+#pic_ul {
+    list-style: none;
+    height: 360px;
+    width: 910px;
+    perspective: 900px;
+}
+
+#pic_ul li {
+    height: 360px;
+    position: relative;
+    transform: translateZ(-180px);
+    transform-style: preserve-3d;
+    float: left;
+}
+
+li span {
+    position: absolute;
+    height: 360px;
+}
+
+li span:nth-child(1) {
+    transform: translateZ(180px);
+}
+
+li span:nth-child(2) {
+    transform: translateZ(-180px) rotateX(180deg);
+}
+
+li span:nth-child(3) {
+    top: -360px;
+    transform-origin: bottom;
+    transform: translateZ(180px) rotateX(90deg);
+}
+
+li span:nth-child(4) {
+    top: 360px;
+    transform-origin: top;
+    transform: translateZ(180px) rotateX(-90deg);
+}
+
+#pic_ul .s1 {
+    background: url("../images/5.jpg");
+}
+
+#pic_ul .s2 {
+    background: url("../images/4.jpg");
+}
+
+#pic_ul .s3 {
+    background: url("../images/3.jpg");
+}
+
+#pic_ul .s4 {
+    background: url("../images/2.jpg");
+}
+
+.box ol {
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+}
+
+.box ol li {
+    list-style: none;
+    color: #fff;
+    background: #000;
+    float: left;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    margin-left: 5px;
+    box-shadow: 0 0 10px #fff;
+    border-radius: 10px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/*右侧边栏*/
+.right-slider-bar {
+    width: 840px;
+    height: 400px;
+    position: fixed;
+    right: -780px;
+    top: 150px;
+}
+
+.right-slider-bar #polling {
+    width: 60px;
+    height: 60px;
+    background: url(../images/search.png);
+    background-size: cover;
+    text-indent: 9px;
+    line-height: 45px;
+    position: absolute;
+    top: 160px;
+    left: 0px;
+    cursor: pointer;
+}
+
+.right-slider-bar .content {
+    width: 780px;
+    height: 400px;
+    background: url("../images/slide-bar.png");
+    border-radius: 40px 0 0 40px;
+    position: absolute;
+    right: 0;
+    box-shadow: 4px 5px 5px #333;
+}
+
+#form {
+    width: 600px;
+    height: 320px;
+    background: rgba(255, 247, 287, 0.5);
+    font: 16px "微软雅黑";
+    border-radius: 150px;
+    position: absolute;
+    top: 37px;
+    right: -600px;
+}
+
+#form .content-text {
+    width: 500px;
+    height: 30px;
+    margin: 10px auto 0;
+}
+
+#form .content-text span {
+    display: block;
+
+}
+
+#form .content-text span.left {
+    width: 100px;
+    float: left;
+    text-align: right
+}
+
+#form .content-text span.right {
+    float: right;
+    margin-right: 15px;
+    text-align: left;
+}
+#form .content-text span.right .radio-box{
+	width: 150px;
+    height: 15px;
+    margin: 0;
+    display: inline-block;
+}
+#form .content-text span.right input {
+    width: 290px;
+    height: 24px;
+    margin-right: 35px;
+}
+#form .content-text span.right input.radio{
+	width: 30px;
+    height: 15px;
+    margin: 0;
+	
+}
+#form .submit {
+    text-align: center;
+    margin-top: 2px;
+}
+
+#sub-btn {
+        width: 250px;
+    height: 40px;
+    font-size: 18px;
+    background: #ff9a32;
+    color: #ffffff;
+    font-weight: bold;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+    margin-right: -90px;
+}
+
+#sub-btn:active {
+    transform: translate(3px, 3px);
+}
